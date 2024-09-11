@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    <div class="container">
+        <div id="turn-indicator" class="turns">Player X's Turn</div> 
+        <div id="game-board">
+            
+        </div>
+        <button class="reset-button">Reset</button> 
+        <div class="scores">
+            <div class="player-x-score">Player X: 0</div>
+            <div class="player-o-score">Player O: 0</div>
+            <div class="tie-score">Ties: 0</div>
+        </div>
+        <div id="modal" class="modal"> 
+            <div class="modal-content">
+                <span class="close">&times;</span> 
+                <p id="modal-message"></p> 
+            </div>
+        </div>
+    </div>
+    <audio class="click-sound" src="sounds/click-soundS.mp3" preload="auto"></audio>
+    <audio class="win-sound" src="sounds/win-sound.mp3" preload="auto"></audio>
+    <script src="script.js"></script> 
+</body>
+</html>
